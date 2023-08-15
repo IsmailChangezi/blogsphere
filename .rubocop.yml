@@ -61,3 +61,4 @@ Style/HashTransformValues:
   Enabled: false
 Style/EndOfLine:
   EnforcedStyle: crlf
+## This is a comment
