@@ -8,6 +8,11 @@ AllCops:
     - "Rakefile"
     - "node_modules/**/*"
     - "app/**/*"
+    - "Gemfile"
+    - "config.ru"
+    - "test/application_system_test_case.rb"
+    - "test/channels/application_cable/connection_test.rb"
+    - "test/test_helper.rb"
 
   DisplayCopNames: true
 
@@ -59,6 +64,3 @@ Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
   Enabled: false
-Style/EndOfLine:
-  EnforcedStyle: crlf
-## This is a comment
