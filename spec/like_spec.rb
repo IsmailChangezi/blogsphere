@@ -1,9 +1,12 @@
 require 'rails_helper'
 
 RSpec.describe Like, type: :model do
-  describe '#update_like_counter' do
-    it 'is available' do
-      expect(Like.new).to respond_to(:update_like_counter)
+  let!(:author) { User.create name: 'David', posts_counter: 0 }
+  let!(:post) { Post.create author_id: author.id, title: 'Dear pets', comments_counter: 0, likes_counter: 0 }
+  let!(:like) { Like.create user_id: author.id, post_id: post.id }
+  context 'update_likes_counter' do
+    it 'should increment likes_counter by one' do
+      expect(like.update_like_counter.likes_counter).to eq(2)
     end
   end
 end
