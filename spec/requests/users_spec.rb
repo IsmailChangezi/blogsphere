@@ -1,29 +1,21 @@
 require 'rails_helper'
 
 RSpec.describe 'Users', type: :request do
-  let!(:user) { User.create!(name: 'John', posts_counter: 0) }
-
   describe 'GET /users' do
-    it 'should return a 200 OK status' do
+    it 'works! (now write some real specs)' do
       get users_path
       expect(response).to have_http_status(200)
-    end
-
-    it 'should render users/index template' do
-      get users_path
-      expect(response).to render_template('index')
+      expect(response).to render_template('users/index')
+      expect(response.body).to include('Users list')
     end
   end
 
-  describe 'Get /users/:id' do
-    it 'should return a 200 OK status' do
-      get user_url(user)
+  describe 'GET /users/1' do
+    it 'works! (now write some real specs)' do
+      get user_path(1)
       expect(response).to have_http_status(200)
-    end
-
-    it 'should render users/show template' do
-      get user_url(user)
-      expect(response).to render_template('show')
+      expect(response).to render_template('users/show')
+      expect(response.body).to include('User 1')
     end
   end
 end
