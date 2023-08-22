@@ -13,6 +13,8 @@ AllCops:
     - "test/application_system_test_case.rb"
     - "test/channels/application_cable/connection_test.rb"
     - "test/test_helper.rb"
+    - "spec/helpers/posts_helper_spec.rb"
+    - "spec/helpers/users_helper_spec.rb"
 
   DisplayCopNames: true
 
