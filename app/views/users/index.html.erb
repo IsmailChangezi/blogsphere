@@ -1,4 +1,5 @@
 <main class="user-sect">
+
  <div class=container-user>
                 <% @users.each do |user|%>
                 <div class='photo'>
@@ -8,4 +9,7 @@
                 </div>
                 <%end%>
  </div>
+   <a href=<%= "/users/#{@current_user.id}/posts/new"%> >
+    <button>New Post</button>
+    </a>
 </main>
