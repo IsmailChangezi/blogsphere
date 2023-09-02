@@ -16,6 +16,10 @@ describe 'Users Post Index', type: :feature do
     visit user_posts_path(@user.id)
   end
 
+  scenario "I can see the user's profile picture" do
+    expect(page).to have_css("img[src*='https://Akaiiii.jpg']")
+  end
+
   scenario "I can see the user's username" do
     expect(page).to have_content('Muhammed-ali')
   end
