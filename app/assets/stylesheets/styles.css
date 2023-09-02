@@ -130,6 +130,10 @@ form {
   padding: 0 5px;
 }
 
+.field {
+  width: 100%;
+}
+
 #user_info {
   display: flex;
   justify-content: space-between;
