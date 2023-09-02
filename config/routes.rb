@@ -11,7 +11,7 @@ Rails.application.routes.draw do
         end
       end
       get "api/users/:author_id/posts", to: "api/posts#index"
-      get "api/users/:author_id/posts/:id", to: "api/comments#index"
-      post "api/users/:author_id/posts/:id/comments/new", to: "api/comments#create"
+      get "/users/:author_id/posts/:id/comments"
+      post "/users/:author_id/posts/:id/comments"
     
 end
