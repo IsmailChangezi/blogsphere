@@ -1,8 +1,8 @@
 <a name="readme-top"></a>
 
-# BlogSphere
+# Rails Blog App
 
-This app is a dynamic and encompassing space for bloggers to share their thoughts, ideas, and stories. It combines "blog" with "sphere," implying a wide and interconnected platform for all kinds of blogging content.
+In this project, I'm building a blog app with rails that will help users to post a blog, give a comment and likes on the posted blog. the database I'm using in this project is postgresql to persist data. 
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -24,9 +24,9 @@ This app is a dynamic and encompassing space for bloggers to share their thought
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 BlogSphere <a name="about-project"></a>
+# 📖 Blog app <a name="about-project"></a>
 
-**BlogSphere** is an app that will help you to keep a post of user,comments and likes given by the user. 
+**Blog app** is an app that will help you to keep a post of user,comments and likes given by the user. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
