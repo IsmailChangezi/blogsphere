@@ -44,4 +44,8 @@ describe 'User Post Show Page', type: :feature do
     expect(page).to have_content('Respects for Chinese martial arts, but I prefer Japanese')
     expect(page).to have_content('I like both!')
   end
+
+  scenario "I can see the user's profile picture" do
+    expect(page).to have_css("img[src*='https://Kuroooo.jpg']")
+  end
 end
